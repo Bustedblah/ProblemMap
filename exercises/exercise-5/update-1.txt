@@ -1,0 +1,7 @@
+// Extract node from property
+MATCH (t:Trade) WHERE has(t.currency)
+WITH t LIMIT 2
+MERGE (c:Currency{code:t.currency})
+MERGE (t)-[:CURRENCY]->(c)
+REMOVE t.currency
+RETURN count(t) AS numberRemoved

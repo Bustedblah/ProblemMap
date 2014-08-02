@@ -1,0 +1,584 @@
+2014-08-01 16:57:38.259+0000 INFO  [API] Setting startup timeout to: 120000ms based on -1
+2014-08-01 16:57:39.434+0000 INFO  [API] Successfully started database
+2014-08-01 16:57:39.491+0000 INFO  [API] Starting HTTP on port :7474 with 80 threads available
+2014-08-01 16:57:39.669+0000 INFO  [API] Enabling HTTPS on port :7473
+2014-08-01 16:57:39.670+0000 INFO  [API] No SSL certificate found, generating a self-signed certificate..
+2014-08-01 16:57:39.978+0000 INFO  [API] Mounted discovery module at [/]
+2014-08-01 16:57:39.985+0000 INFO  [API] Mounted REST API at [/db/data/]
+2014-08-01 16:57:39.987+0000 INFO  [API] Mounted management API at [/db/manage/]
+2014-08-01 16:57:39.987+0000 INFO  [API] Mounted webadmin at [/webadmin]
+2014-08-01 16:57:39.987+0000 INFO  [API] Mounted Neo4j Browser at [/browser]
+2014-08-01 16:57:40.042+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2014-08-01 16:57:40.086+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+09:57:40.088 [main] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@1a1e5304{/,null,null} contextPath ends with /
+09:57:40.088 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+09:57:40.090 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+09:57:40.112 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@67d6b10c{/,null,AVAILABLE}
+09:57:40.180 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+09:57:40.190 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@b418e46{/webadmin,jar:file:/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/system/lib/neo4j-server-2.1.3-static-web.jar!/webadmin-html,AVAILABLE}
+09:57:40.548 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6c805a58{/db/manage,null,AVAILABLE}
+09:57:40.756 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4f46a311{/db/data,null,AVAILABLE}
+09:57:40.770 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+09:57:40.771 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@24ed46f5{/browser,jar:file:/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/system/lib/neo4j-browser-2.1.3.jar!/browser,AVAILABLE}
+09:57:40.835 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1a1e5304{/,null,AVAILABLE}
+09:57:40.843 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@62723c0c{HTTP/1.1}{localhost:7474}
+09:57:41.122 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1435e7c5{SSL-HTTP/1.1}{localhost:7473}
+2014-08-01 16:57:41.123+0000 INFO  [API] Server started on: http://localhost:7474/
+2014-08-01 16:57:41.123+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
+15:31:32.080 [qtp1640681026-223] WARN  o.e.jetty.servlet.ServletHandler - 
+javax.servlet.ServletException: java.lang.ExceptionInInitializerError
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:420) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) ~[jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) ~[jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at java.lang.Class.forName0(Native Method) ~[na:1.7.0_45]
+	at java.lang.Class.forName(Class.java:190) ~[na:1.7.0_45]
+	at jline.ConsoleReader.class$(ConsoleReader.java:39) ~[org.apache.servicemix.bundles.jline-0.9.94_1.jar:na]
+	at jline.ConsoleReader.<clinit>(ConsoleReader.java:38) ~[org.apache.servicemix.bundles.jline-0.9.94_1.jar:na]
+	at java.lang.Class.forName0(Native Method) ~[na:1.7.0_45]
+	at java.lang.Class.forName(Class.java:190) ~[na:1.7.0_45]
+	at org.neo4j.shell.impl.JLineConsole.newConsoleOrNullIfNotFound(JLineConsole.java:40) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.AbstractClient.init(AbstractClient.java:198) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.SameJvmClient.<init>(SameJvmClient.java:62) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSession.<init>(ShellSession.java:62) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSessionCreator.newSession(ShellSessionCreator.java:36) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.getOrInstantiateSession(SessionFactoryImpl.java:76) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.createSession(SessionFactoryImpl.java:59) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.getSession(ConsoleService.java:149) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.exec(ConsoleService.java:126) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.9.jar:1.9]
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:139) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:288) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1469) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1400) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-server-1.9.jar:1.9]
+	... 20 common frames omitted
+Caused by: java.util.MissingResourceException: Can't find bundle for base name jline.CandidateListCompletionHandler, locale en_US
+	at java.util.ResourceBundle.throwMissingResourceException(ResourceBundle.java:1499) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1322) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.getBundle(ResourceBundle.java:721) ~[na:1.7.0_45]
+	at jline.CandidateListCompletionHandler.<clinit>(CandidateListCompletionHandler.java:31) ~[org.apache.servicemix.bundles.jline-0.9.94_1.jar:na]
+	... 52 common frames omitted
+Caused by: java.lang.ClassCastException: jline.CandidateListCompletionHandler cannot be cast to ResourceBundle
+	at java.util.ResourceBundle$Control.newBundle(ResourceBundle.java:2574) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.loadBundle(ResourceBundle.java:1436) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1400) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1354) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.findBundle(ResourceBundle.java:1354) ~[na:1.7.0_45]
+	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1296) ~[na:1.7.0_45]
+	... 54 common frames omitted
+15:33:24.334 [qtp1640681026-229] WARN  o.e.jetty.servlet.ServletHandler - 
+javax.servlet.ServletException: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:420) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) ~[jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) ~[jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at java.lang.Class.forName0(Native Method) ~[na:1.7.0_45]
+	at java.lang.Class.forName(Class.java:190) ~[na:1.7.0_45]
+	at org.neo4j.shell.impl.JLineConsole.newConsoleOrNullIfNotFound(JLineConsole.java:40) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.AbstractClient.init(AbstractClient.java:198) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.SameJvmClient.<init>(SameJvmClient.java:62) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSession.<init>(ShellSession.java:62) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSessionCreator.newSession(ShellSessionCreator.java:36) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.getOrInstantiateSession(SessionFactoryImpl.java:76) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.createSession(SessionFactoryImpl.java:59) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.getSession(ConsoleService.java:149) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.exec(ConsoleService.java:126) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.9.jar:1.9]
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:139) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:288) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1469) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1400) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-server-1.9.jar:1.9]
+	... 20 common frames omitted
+15:34:19.802 [qtp1640681026-231] WARN  o.e.jetty.servlet.ServletHandler - 
+javax.servlet.ServletException: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:420) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) ~[jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) ~[jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at java.lang.Class.forName0(Native Method) ~[na:1.7.0_45]
+	at java.lang.Class.forName(Class.java:190) ~[na:1.7.0_45]
+	at org.neo4j.shell.impl.JLineConsole.newConsoleOrNullIfNotFound(JLineConsole.java:40) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.AbstractClient.init(AbstractClient.java:198) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.SameJvmClient.<init>(SameJvmClient.java:62) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSession.<init>(ShellSession.java:62) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSessionCreator.newSession(ShellSessionCreator.java:36) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.getOrInstantiateSession(SessionFactoryImpl.java:76) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.createSession(SessionFactoryImpl.java:59) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.getSession(ConsoleService.java:149) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.exec(ConsoleService.java:126) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.9.jar:1.9]
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:139) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:288) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1469) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1400) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-server-1.9.jar:1.9]
+	... 20 common frames omitted
+15:35:00.386 [qtp1640681026-226] WARN  o.e.jetty.servlet.ServletHandler - 
+javax.servlet.ServletException: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:420) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:699) ~[jersey-server-1.9.jar:1.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:698) ~[jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:505) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:211) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1096) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:432) [jetty-servlet-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:175) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1030) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:136) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.Server.handle(Server.java:445) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:268) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:229) [jetty-server-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.run(AbstractConnection.java:358) [jetty-io-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:601) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:532) [jetty-util-9.0.5.v20130815.jar:9.0.5.v20130815]
+	at java.lang.Thread.run(Thread.java:744) [na:1.7.0_45]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class jline.ConsoleReader
+	at java.lang.Class.forName0(Native Method) ~[na:1.7.0_45]
+	at java.lang.Class.forName(Class.java:190) ~[na:1.7.0_45]
+	at org.neo4j.shell.impl.JLineConsole.newConsoleOrNullIfNotFound(JLineConsole.java:40) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.AbstractClient.init(AbstractClient.java:198) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.shell.impl.SameJvmClient.<init>(SameJvmClient.java:62) ~[neo4j-shell-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSession.<init>(ShellSession.java:62) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.console.ShellSessionCreator.newSession(ShellSessionCreator.java:36) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.getOrInstantiateSession(SessionFactoryImpl.java:76) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.SessionFactoryImpl.createSession(SessionFactoryImpl.java:59) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.getSession(ConsoleService.java:149) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at org.neo4j.server.webadmin.rest.console.ConsoleService.exec(ConsoleService.java:126) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$ResponseOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:205) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.9.jar:1.9]
+	at org.neo4j.server.rest.transactional.TransactionalRequestDispatcher.dispatch(TransactionalRequestDispatcher.java:139) ~[neo4j-server-2.1.3.jar:2.1.3]
+	at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:288) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.ResourceClassRule.accept(ResourceClassRule.java:108) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1469) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1400) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339) ~[jersey-server-1.9.jar:1.9]
+	at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-server-1.9.jar:1.9]
+	... 20 common frames omitted
+2014-08-01 22:35:58.048+0000 INFO  [API] Neo4j Server shutdown initiated by request
+15:35:58.052 [Thread-25] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@62723c0c{HTTP/1.1}{localhost:7474}
+15:35:58.053 [Thread-25] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1435e7c5{SSL-HTTP/1.1}{localhost:7473}
+15:35:58.054 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@1a1e5304{/,null,UNAVAILABLE}
+15:35:58.055 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@24ed46f5{/browser,jar:file:/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/system/lib/neo4j-browser-2.1.3.jar!/browser,UNAVAILABLE}
+15:35:58.055 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4f46a311{/db/data,null,UNAVAILABLE}
+15:35:58.055 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6c805a58{/db/manage,null,UNAVAILABLE}
+15:35:58.057 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@b418e46{/webadmin,jar:file:/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/system/lib/neo4j-server-2.1.3-static-web.jar!/webadmin-html,UNAVAILABLE}
+15:35:58.057 [Thread-25] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.h.MovedContextHandler@67d6b10c{/,null,UNAVAILABLE}
+2014-08-01 22:35:58.061+0000 INFO  [API] Successfully shutdown Neo4j Server.
+2014-08-01 22:35:58.062+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8 java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+java.lang.RuntimeException: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.index.impl.lucene.LuceneDataSource.stop(LuceneDataSource.java:328)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:547)
+	at org.neo4j.kernel.lifecycle.LifeSupport.remove(LifeSupport.java:339)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterDataSource(XaDataSourceManager.java:272)
+	at org.neo4j.index.lucene.LuceneKernelExtension.stop(LuceneKernelExtension.java:92)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.extension.KernelExtensions.stop(KernelExtensions.java:125)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:62)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:52)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1284)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:643)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 20 more
+2014-08-01 22:35:58.063+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.index.lucene.LuceneKernelExtension@1bd172ba Component 'org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:547)
+	at org.neo4j.kernel.lifecycle.LifeSupport.remove(LifeSupport.java:339)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterDataSource(XaDataSourceManager.java:272)
+	at org.neo4j.index.lucene.LuceneKernelExtension.stop(LuceneKernelExtension.java:92)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.extension.KernelExtensions.stop(KernelExtensions.java:125)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.index.impl.lucene.LuceneDataSource.stop(LuceneDataSource.java:328)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 18 more
+Caused by: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:62)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:52)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1284)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:643)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 20 more
+2014-08-01 22:35:58.064+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.kernel.extension.KernelExtensions@2f4fe26c Component 'org.neo4j.index.lucene.LuceneKernelExtension@1bd172ba' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.lucene.LuceneKernelExtension@1bd172ba' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.extension.KernelExtensions.stop(KernelExtensions.java:125)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:547)
+	at org.neo4j.kernel.lifecycle.LifeSupport.remove(LifeSupport.java:339)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterDataSource(XaDataSourceManager.java:272)
+	at org.neo4j.index.lucene.LuceneKernelExtension.stop(LuceneKernelExtension.java:92)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.index.impl.lucene.LuceneDataSource.stop(LuceneDataSource.java:328)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 18 more
+Caused by: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:62)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:52)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1284)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:643)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 20 more
+2014-08-01 22:35:58.121+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource@1eab8bf6 java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+java.lang.RuntimeException: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.stop(NeoStoreXaDataSource.java:505)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.stop(XaDataSourceManager.java:185)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.renameLogFileToRightVersion(XaLogicalLog.java:580)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:648)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 15 more
+2014-08-01 22:35:58.122+0000 ERROR [org.neo4j]: Exception when stopping org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5 Component 'org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource@1eab8bf6' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource@1eab8bf6' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.stop(XaDataSourceManager.java:185)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: java.lang.RuntimeException: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.stop(NeoStoreXaDataSource.java:505)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.renameLogFileToRightVersion(XaLogicalLog.java:580)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:648)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 15 more
+2014-08-01 22:35:58.122+0000 ERROR [org.neo4j]: Lifecycle exception Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource@1eab8bf6' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.stop(XaDataSourceManager.java:185)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 10 more
+Caused by: java.lang.RuntimeException: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.stop(NeoStoreXaDataSource.java:505)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.renameLogFileToRightVersion(XaLogicalLog.java:580)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:648)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 15 more
+2014-08-01 22:35:58.123+0000 ERROR [org.neo4j]: Chained lifecycle exception Component 'org.neo4j.kernel.extension.KernelExtensions@2f4fe26c' failed to stop. Please see attached cause exception.
+org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.extension.KernelExtensions@2f4fe26c' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.lucene.LuceneKernelExtension@1bd172ba' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.extension.KernelExtensions.stop(KernelExtensions.java:125)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 10 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:547)
+	at org.neo4j.kernel.lifecycle.LifeSupport.remove(LifeSupport.java:339)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterDataSource(XaDataSourceManager.java:272)
+	at org.neo4j.index.lucene.LuceneKernelExtension.stop(LuceneKernelExtension.java:92)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.index.impl.lucene.LuceneDataSource.stop(LuceneDataSource.java:328)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 18 more
+Caused by: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:62)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:52)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1284)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:643)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 20 more
+2014-08-01 22:35:58.126+0000 INFO  [API] Database did not stop cleanly. Reason [Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.]
+Exception in thread "Thread-25" java.lang.RuntimeException: java.lang.RuntimeException: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:57)
+	at org.neo4j.server.AbstractNeoServer.stop(AbstractNeoServer.java:553)
+	at org.neo4j.server.Bootstrapper$1.run(Bootstrapper.java:203)
+Caused by: java.lang.RuntimeException: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:620)
+	at org.neo4j.server.AbstractNeoServer.access$400(AbstractNeoServer.java:83)
+	at org.neo4j.server.AbstractNeoServer$6.run(AbstractNeoServer.java:579)
+	at org.neo4j.helpers.RunCarefully.run(RunCarefully.java:47)
+	... 2 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.transaction.XaDataSourceManager@32f2c7e5' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.lifecycle.LifeSupport.shutdown(LifeSupport.java:185)
+	at org.neo4j.kernel.InternalAbstractGraphDatabase.shutdown(InternalAbstractGraphDatabase.java:811)
+	at org.neo4j.server.database.LifecycleManagingDatabase.stop(LifecycleManagingDatabase.java:139)
+	at org.neo4j.server.AbstractNeoServer.stopDatabase(AbstractNeoServer.java:616)
+	... 5 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource@1eab8bf6' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.stop(XaDataSourceManager.java:185)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 10 more
+Caused by: java.lang.RuntimeException: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.kernel.impl.nioneo.xa.NeoStoreXaDataSource.stop(NeoStoreXaDataSource.java:505)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.io.IOException: Logical log[/Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/nioneo_logical.log.1] not found
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.renameLogFileToRightVersion(XaLogicalLog.java:580)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:648)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 15 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.kernel.extension.KernelExtensions@2f4fe26c' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	... 10 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.lucene.LuceneKernelExtension@1bd172ba' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport.stop(LifeSupport.java:155)
+	at org.neo4j.kernel.extension.KernelExtensions.stop(KernelExtensions.java:125)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 10 more
+Caused by: org.neo4j.kernel.lifecycle.LifecycleException: Component 'org.neo4j.index.impl.lucene.LuceneDataSource@42c5d8' failed to stop. Please see attached cause exception.
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:532)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.shutdown(LifeSupport.java:547)
+	at org.neo4j.kernel.lifecycle.LifeSupport.remove(LifeSupport.java:339)
+	at org.neo4j.kernel.impl.transaction.XaDataSourceManager.unregisterDataSource(XaDataSourceManager.java:272)
+	at org.neo4j.index.lucene.LuceneKernelExtension.stop(LuceneKernelExtension.java:92)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 13 more
+Caused by: java.lang.RuntimeException: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:73)
+	at org.neo4j.index.impl.lucene.LuceneDataSource.stop(LuceneDataSource.java:328)
+	at org.neo4j.kernel.lifecycle.LifeSupport$LifecycleInstance.stop(LifeSupport.java:527)
+	... 18 more
+Caused by: java.io.FileNotFoundException: /Users/Eilmarith/Desktop/causeroot/neo4j/neo4j-community-2.1.3/data/graph.db/index/lucene.log.active (No such file or directory)
+	at java.io.RandomAccessFile.open(Native Method)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:241)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:62)
+	at org.neo4j.kernel.DefaultFileSystemAbstraction.open(DefaultFileSystemAbstraction.java:52)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.setActiveLog(XaLogicalLog.java:1284)
+	at org.neo4j.kernel.impl.transaction.xaframework.XaLogicalLog.close(XaLogicalLog.java:643)
+	at org.neo4j.kernel.impl.transaction.xaframework.LogBackedXaDataSource.stop(LogBackedXaDataSource.java:69)
+	... 20 more
+2014-08-01 22:36:00.211+0000 INFO  [API] Setting startup timeout to: 120000ms based on -1
+Detected incorrectly shut down database, performing recovery..
+2014-08-01 22:36:05.259+0000 INFO  [API] Successfully started database
+2014-08-01 22:36:05.296+0000 INFO  [API] Starting HTTP on port :7474 with 80 threads available
+2014-08-01 22:36:05.415+0000 INFO  [API] Enabling HTTPS on port :7473
+2014-08-01 22:36:05.469+0000 INFO  [API] Mounted discovery module at [/]
+2014-08-01 22:36:05.474+0000 INFO  [API] Mounted REST API at [/db/data/]
+2014-08-01 22:36:05.475+0000 INFO  [API] Mounted management API at [/db/manage/]
+2014-08-01 22:36:05.476+0000 INFO  [API] Mounted webadmin at [/webadmin]
+2014-08-01 22:36:05.476+0000 INFO  [API] Mounted Neo4j Browser at [/browser]
+2014-08-01 22:36:05.513+0000 INFO  [API] Mounting static content at [/webadmin] from [webadmin-html]
+2014-08-01 22:36:05.544+0000 INFO  [API] Mounting static content at [/browser] from [browser]
+15:36:05.546 [main] WARN  o.e.j.server.handler.ContextHandler - o.e.j.s.ServletContextHandler@ecb39d{/,null,null} contextPath ends with /
+15:36:05.546 [main] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+15:36:05.547 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.0.5.v20130815
+15:36:05.563 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.h.MovedContextHandler@2eb31d47{/,null,AVAILABLE}
+15:36:05.623 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /webadmin, did not find org.apache.jasper.servlet.JspServlet
+15:36:05.632 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@37ce439e{/webadmin,jar:file:/Users/Eilmarith/Desktop/ProblemMap/neo4j/neo4j-community-2.1.3/system/lib/neo4j-server-2.1.3-static-web.jar!/webadmin-html,AVAILABLE}
+15:36:05.922 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3c4ecbf{/db/manage,null,AVAILABLE}
+15:36:06.090 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7d0afce3{/db/data,null,AVAILABLE}
+15:36:06.103 [main] INFO  o.e.j.w.StandardDescriptorProcessor - NO JSP Support for /browser, did not find org.apache.jasper.servlet.JspServlet
+15:36:06.104 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@7b80f940{/browser,jar:file:/Users/Eilmarith/Desktop/ProblemMap/neo4j/neo4j-community-2.1.3/system/lib/neo4j-browser-2.1.3.jar!/browser,AVAILABLE}
+15:36:06.163 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@ecb39d{/,null,AVAILABLE}
+15:36:06.172 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@6a40159a{HTTP/1.1}{localhost:7474}
+15:36:06.450 [main] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@473920da{SSL-HTTP/1.1}{localhost:7473}
+2014-08-01 22:36:06.450+0000 INFO  [API] Server started on: http://localhost:7474/
+2014-08-01 22:36:06.451+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]

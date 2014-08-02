@@ -1,0 +1,13 @@
+MERGE (c:Company{name:'Acme'})
+MERGE (p:Person{username:'ian'})
+MERGE (s1:Skill{name:'Java'})
+MERGE (s2:Skill{name:'C#'})
+MERGE (s3:Skill{name:'Neo4j'})
+MERGE (c)<-[:WORKS_FOR]-(p)
+MERGE (p)-[r1:HAS_SKILL]->(s1)
+MERGE (p)-[r2:HAS_SKILL]->(s2)
+MERGE (p)-[r3:HAS_SKILL]->(s3)
+SET r1.level = 2
+SET r2.level = 2
+SET r3.level = 3
+RETURN c, p, s1, s2, s3

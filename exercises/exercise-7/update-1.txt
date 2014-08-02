@@ -1,0 +1,7 @@
+// Extract node from relationship
+MATCH (a:User)-[r:EMAILED]->(b:User)
+WITH a, r, b LIMIT 2
+MERGE (email:Email{content:r.content, _rid:id(r)})
+MERGE (a)-[:SENT]->(email)-[:TO]->(b)
+DELETE r
+RETURN count(r) AS numberDeleted

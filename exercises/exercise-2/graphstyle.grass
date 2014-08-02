@@ -1,0 +1,49 @@
+relationship {
+  color: #D4D6D7;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #FFFFFF;
+}
+
+node {
+  diameter: 40px;
+  color: #FCC940;
+  border-color: #F3BA25;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{from}';
+  font-size: 10px;
+}
+
+node.Person {
+  diameter: 50px;
+  color: #4356C0;
+  border-color: #3445A2;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{username}';
+  font-size: 10px;
+}
+
+node.Skill {
+  diameter: 50px;
+  color: #F25A29;
+  border-color: #DC4717;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{name}';
+  font-size: 10px;
+}
+
+node.Company {
+  diameter: 50px;
+  color: #30B6AF;
+  border-color: #46A39E;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{name}';
+  font-size: 10px;
+}
+

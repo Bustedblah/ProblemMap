@@ -1,0 +1,8 @@
+CREATE 
+(ben:Person{username:'ben'}),
+(acme:Company{name:'Acme, Inc'}),
+(neo4j:Skill{name:'Neo4j'}),
+(rest:Skill{name:'REST'}),
+(ben)-[:WORKS_FOR]->(acme),
+(ben)-[:HAS_SKILL{level:1}]->(neo4j),
+(ben)-[:HAS_SKILL{level:3}]->(rest)

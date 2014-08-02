@@ -1,0 +1,12 @@
+CREATE 
+(p1:Party{name:'Party 1'}),
+(p2:Party{name:'Party 2'}),
+(t1:Trade{amount:100.00,currency:'GBP'}),
+(t2:Trade{amount:25.00,currency:'USD'}),
+(t3:Trade{amount:325.00,currency:'GBP'}),
+(p1)<-[:BUYER]-(t1),
+(t1)-[:SELLER]->(p2),
+(p1)<-[:BUYER]-(t2),
+(t2)-[:SELLER]->(p2),
+(p2)<-[:BUYER]-(t3),
+(t3)-[:SELLER]->(p1)

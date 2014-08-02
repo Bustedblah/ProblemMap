@@ -1,0 +1,2 @@
+MATCH (patrick:User{name:"Patrick"})-[:FIRST]->(firstJob)-[:NEXT*0..]->(nextJob)
+RETURN nextJob.from as nextJobFrom, nextJob.to as nextJobTo

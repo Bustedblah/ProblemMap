@@ -1,0 +1,7 @@
+MATCH (company)<-[:WORKS_FOR]-(me:Person{username:'ian'})-[:HAS_SKILL]->(skill),
+      (company)<-[:WORKS_FOR]-(colleague)-[r:HAS_SKILL]->(skill)
+WHERE  r.level > 1
+RETURN colleague.username AS username,
+       count(skill) AS score,
+       collect(skill.name) AS skills
+ORDER BY score DESC

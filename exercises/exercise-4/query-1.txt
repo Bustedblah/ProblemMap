@@ -1,0 +1,3 @@
+MATCH (timeline:Timeline{name:'timeline-1'})-[:YEAR]->(year)-[:MONTH]->(month)-[:DAY]->(day)<-[:OCCURRED]-(n)
+WHERE day.millis >= 1169596800000 AND day.millis < 1200268800000
+RETURN n

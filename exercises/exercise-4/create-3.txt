@@ -1,0 +1,5 @@
+MERGE (timeline:Timeline{name:'timeline-1'})
+MERGE (timeline)-[:YEAR]->(year{value:2007})
+MERGE (year)-[:MONTH]->(month{value:2})
+MERGE (month)-[:DAY]->(day{value:1, millis:1170288000000})
+MERGE (day)<-[:OCCURRED]-(n:Purchase{name:'purchase-3'})

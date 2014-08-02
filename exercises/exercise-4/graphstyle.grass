@@ -1,0 +1,39 @@
+relationship {
+  color: #D4D6D7;
+  shaft-width: 1px;
+  font-size: 8px;
+  padding: 3px;
+  text-color-external: #000000;
+  text-color-internal: #FFFFFF;
+}
+
+node.Timeline {
+  diameter: 50px;
+  color: #4356C0;
+  border-color: #3445A2;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{name}';
+  font-size: 10px;
+}
+
+node {
+  diameter: 40px;
+  color: #F25A29;
+  border-color: #DC4717;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{value}';
+  font-size: 10px;
+}
+
+node.Purchase {
+  diameter: 50px;
+  color: #30B6AF;
+  border-color: #46A39E;
+  border-width: 2px;
+  text-color-internal: #fff;
+  caption: '{name}';
+  font-size: 10px;
+}
+

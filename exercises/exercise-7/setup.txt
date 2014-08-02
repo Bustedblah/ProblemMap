@@ -1,0 +1,13 @@
+CREATE (bill:User{name:'Bill'}),
+(ben:User{name:'Ben'}),
+(sarah:User{name:'Sarah'}),
+(lucy:User{name:'Lucy'}),
+(toby:User{name:'Toby'}),
+(bill)-[:EMAILED{content:'Email 1'}]->(ben),
+(bill)-[:EMAILED{content:'Email 2'}]->(lucy),
+(lucy)-[:EMAILED{content:'Email 3'}]->(sarah),
+(lucy)-[:EMAILED{content:'Email 4'}]->(bill),
+(sarah)-[:EMAILED{content:'Email 5'}]->(toby),
+(toby)-[:EMAILED{content:'Email 6'}]->(ben),
+(ben)-[:EMAILED{content:'Email 7'}]->(bill),
+(ben)-[:EMAILED{content:'Email 8'}]->(lucy)

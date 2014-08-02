@@ -1,0 +1,9 @@
+// Extract node from array property
+MATCH (project:Project) 
+WHERE has(project.language)
+WITH project LIMIT 2
+FOREACH (l IN project.language | 
+  MERGE (language:Language{value:l})
+  CREATE UNIQUE (project)-[:LANGUAGE]->(language))
+REMOVE project.language
+RETURN count(project) AS numberRemoved

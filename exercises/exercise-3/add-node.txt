@@ -1,0 +1,19 @@
+//Create newJob and new LAST relationship
+MATCH (patrick:User {name: "Patrick"})
+MERGE (newJob:Job {from: 2005, to:2007})
+MERGE (patrick)-[:LAST]->(newJob)
+
+// Determine whether first job already exists
+WITH patrick, newJob,
+     CASE WHEN NOT ((patrick)-[:FIRST]->()) THEN [1] ELSE []
+     END 
+  AS firstExists
+
+// Create FIRST rel newJob is first job
+FOREACH (i IN firstExists | CREATE UNIQUE (patrick)-[:FIRST]->(newJob))
+WITH patrick, newJob
+
+// Delete old LAST relationship
+MATCH (newJob)<-[:LAST]-(patrick)-[oldRel:LAST]->(oldLast)
+DELETE oldRel
+MERGE (oldLast)-[:NEXT]->(newJob)
